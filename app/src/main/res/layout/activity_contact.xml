@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/darker_gray"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#F8F8F8"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/click_selector"
+            android:drawableLeft="@mipmap/back"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="手机通讯录"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/search_shape"
+        android:gravity="center"
+        android:text="搜索"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv1"
+                android:text="院办"
+                style="@style/structure"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:text="部门"
+                style="@style/structure"/>
+        </LinearLayout>
+
+        <com.han.address_list.view.QuickIndexBar
+            android:id="@+id/quickIndexBar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_word"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/smooth_search_shape"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="55sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>
